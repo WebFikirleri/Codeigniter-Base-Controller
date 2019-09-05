@@ -27,7 +27,8 @@ class MY_Controller extends CI_Controller {
 		if ($has_hf) $this->load->view($tpl_path.'_footer_view',$this->vd);
 	}
   
-  public function _add_view_data($var_name, $data) {
+  public function _add_view_data($var_name, $data)
+	{
     $this->vd[$var_name] = $data;
   }
 
